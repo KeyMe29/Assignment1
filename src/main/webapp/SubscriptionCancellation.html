@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>LIVENVIBE - Subscription Cancel/Refund </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+	<style>::-webkit-calendar-picker-indicator { filter: invert(100%) }</style> <!-- date picker visibility -->
+	</head>
+	<body>
+	<section class="ftco-section" style="padding: 2em 0;">
+		<div class="container">
+			<div class="row justify-content-center">
+			<h1><span style="color:#32af00;">LIVE</span>N<span style="color:#be83ab;">VIBE</span>&#8482;</h1>
+			</div>
+			<div class="row justify-content-center" style="padding-bottom: 2em;">
+			<sup style="font-size:86%;">Your choice of celebrities video streaming platform.</sup>
+			</div>
+			<div class="row justify-content-center" style="padding: 1em 0;">
+				<div class="col-md-6 text-center mb 0">
+					<h2 class="heading-section">Subscription Cancel/Refund Request</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center"  style="margin-left:-60px;margin-right:-60px;">
+				<div class="col-lg-10">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-md-8 d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4 py-5">
+									<h3 class="mb-4">Fill in the form</h3>
+									<div id="form-message-warning" class="mb-4"></div>
+									<div id="form-message-success" class="mb-4">Your message
+										was sent, thank you!</div>
+									<form method="POST" action="CancelInquiryServlet"
+										id="cancelForm" name="cancelForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="number" class="form-control" name="custNo"
+														id="custNo" placeholder="Membership No. (ex:- 00129)"
+														required>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="email" class="form-control" name="email"
+														id="email" placeholder="Email address" required>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<span style="color: #FFFFFF;">Country</span><br> <input
+														type="text" class="form-control" name="country"
+														id="Country" placeholder="Country name" required>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<span style="color: #FFFFFF;">Type of Subscription</span><br>
+													<span style="color: #FFFFFFCC";> <input type="radio"
+														name="subscribeType" id=subscribeType
+														value="Generational Membership" required> <label
+														for="Generational Membership" style="padding-top: 0.6em;">Generational
+															Membership</label><br> <input type="radio"
+														name="subscribeType" id=subscribeType
+														value="Regular Membership"> <label
+														for="Regular Membership">Regular Membership</label><br>
+														<input type="radio" name="subscribeType" id=subscribeType
+														value="Generational Membership"> <label
+														for="LivePlus Purchase">LivePlus Purchase</label></span>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<span style="color: #FFFFFF;">Subscription for
+														artist:</span><br> <select class="form-control"
+														id="subscription" name="subscription"
+														style="background-color: #272A34;" required>
+														<option value="" selected disabled hidden>Choose
+															here</option>
+														<option value="Day6">Day6</option>
+														<option value="Stray Kids">Stray Kids</option>
+														<option value="SEVENTEEN">SEVENTEEN</option>
+														<option value="Kim Se Jeong">Kim Se Jeong</option>
+														<option value="CHUNG HA">CHUNG HA</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<span style="color: #FFFFFF;">Price of the product
+														(USD)</span><br> <input type="number" class="form-control"
+														name="prodPrice" id="prodPrice" placeholder="Insert price"
+														step="0.01" required>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+													<span style="color: #FFFFFF;">Purchased Date:</span><br>
+													<input type="Date" class="form-control" name="purchaseDate"
+														id="purchaseDate"
+														style="background: transparent; color: white;" required>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<span style="color: #FFFFFF;">Purchased Time:</span><br>
+													<input type="Time" class="form-control" name="purchaseTime"
+														id="purchaseTime" required>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<span style="color: #FFFFFF;">Cancellation/Refund
+														Reason:</span><br> <span style="color: #FFFFFFCC";> <input
+														type="checkbox" name="cancelReason" value="Change of mind">
+														<label for="reason1">Change of mind</label><br> <input
+														type="checkbox" name="cancelReason"
+														value="Purchasing mistake"> <label for="reason2">Purchasing
+															mistake</label><br> <input type="checkbox"
+														name="cancelReason" value="Did not meet expectation">
+														<label for="reason3">Did not meet expectation</label><br></span>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<span style="color: #FFFFFF;">Other Reason:</span><br>
+													<textarea name="otherReason" class="form-control"
+														id="otherReason" cols="30" rows="6"
+														placeholder="Elaborate here..."></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Send" class="btn btn-primary"
+														style="background: #32af00 !important; border-color: #32af00 !important;">
+													<div class="submitting"></div>
+													<input type="reset" value="Reset" class="btn btn-primary">
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-4 d-flex align-items-stretch">
+								<div class="info-wrap w-100 p-md-5 p-4 py-5 img">
+									<h3>Contact information</h3>
+									<p class="mb-4">We're open for any suggestion or just to
+										have a chat</p>
+									<div class="dbox w-100 d-flex align-items-start">
+										<div
+											class="icon d-flex align-items-center justify-content-center">
+											<span class="fa fa-map-marker"></span>
+										</div>
+										<div class="text pl-3">
+											<p>
+												<span>Address:</span> 14, Jalan TS 13, Taman Templer Saujana, 48000, Rawang, Selangor
+											</p>
+										</div>
+									</div>
+									<div class="dbox w-100 d-flex align-items-center">
+										<div
+											class="icon d-flex align-items-center justify-content-center">
+											<span class="fa fa-phone"></span>
+										</div>
+										<div class="text pl-3">
+											<p>
+												<span>Phone:</span> <a href="tel://0162172568">+ 0162172568</a>
+											</p>
+										</div>
+									</div>
+									<div class="dbox w-100 d-flex align-items-center">
+										<div
+											class="icon d-flex align-items-center justify-content-center">
+											<span class="fa fa-paper-plane"></span>
+										</div>
+										<div class="text pl-3">
+											<p>
+												<span>Email:</span> <a href="mailto:info@memirhakimi29#gmail.com">memirhakimi29@gmail.com</a>
+											</p>
+										</div>
+									</div>
+									<div class="dbox w-100 d-flex align-items-center">
+										<div
+											class="icon d-flex align-items-center justify-content-center">
+											<span class="fa fa-globe"></span>
+										</div>
+										<div class="text pl-3">
+											<p>
+												<span>Template</span> <a href="https://colorlib.com/wp/template/contact-form-07/">colorlib.com</a>
+											</p>
+											<p>
+												<span>Inspired By</span> <a href="https://help.naver.com/support/contents/contents.help?serviceNo=24058&categoryNo=24193">help.naver.com</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</section>
+	
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+
